@@ -68,15 +68,16 @@ bool NewScene::init()
     CCMenuItemFont::setFontName("Helvetica-BoldOblique");
     CCMenuItemFont::setFontSize(40);
     CCMenuItemFont* item = CCMenuItemFont::create("戻る", this, menu_selector(NewScene::startHelloWorldLayer));
-
-    CCMenu* menu = CCMenu::create(item, NULL);
+    
+    CCMenu *menu = CCMenu::create(item, NULL);
     // メニューをレイヤーBに追加します
     layerB->addChild(menu);
-
+    
     return true;
 }
 
 void NewScene::startHelloWorldLayer()
 {
-    CCDirector::sharedDirector()->replaceScene(HelloWorldLayer::scene());
+    CCTransitionCrossFade *tran = CCTransitionCrossFade::create(1.0f, HelloWorldLayer::scene()/*, ccc3(255, 255, 255)*/);
+    CCDirector::sharedDirector()->replaceScene(tran);
 }
