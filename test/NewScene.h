@@ -15,6 +15,9 @@
 class NewScene : public cocos2d::CCLayer
 {
 public:
+    NewScene(void);
+    ~NewScene(void);
+    
     static cocos2d::CCScene* scene();
     virtual bool init();
     void startHelloWorldLayer();

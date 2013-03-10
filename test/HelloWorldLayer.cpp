@@ -8,8 +8,18 @@
 
 #include "HelloWorldLayer.h"
 #include "NewScene.h"
+#include "SimpleAudioEngine.h"
 
 using namespace cocos2d;
+using namespace CocosDenshion;
+
+HelloWorldLayer::HelloWorldLayer(void)
+{
+}
+
+HelloWorldLayer::~HelloWorldLayer(void)
+{
+}
 
 CCScene* HelloWorldLayer::scene()
 {
@@ -28,13 +38,17 @@ CCScene* HelloWorldLayer::scene()
 
 bool HelloWorldLayer::init()
 {
+    //////////////////////////////
     // 1. super init first
     if ( !CCLayer::init() )
     {
         return false;
     }
+    
+    /////////////////////////////
+    // 2. 
     CCSize size = CCDirector::sharedDirector()->getWinSize();
-    CCLabelTTF *label = CCLabelTTF::create(CCString::createWithFormat("W:%.2f, H:%.2f", size.width, size.height)->getCString(), "Marker Feit", 64);
+    CCLabelTTF *label = CCLabelTTF::create(CCString::createWithFormat("W:%.2f, H:%.2f", size.width, size.height)->getCString(), "Marker Feit", 40);
     // position the label ont the center of the scene
     label->setPosition(ccp(size.width / 2, size.height / 2));
     this->addChild(label);
@@ -49,6 +63,7 @@ bool HelloWorldLayer::init()
     menu->setPosition(CCPointMake(size.width / 2, size.height / 2 - 60));
     // メニューをthisレイヤーに追加します
     this->addChild(menu);
+    return true;
 }
 
 void HelloWorldLayer::startNewScene()

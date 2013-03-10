@@ -10,11 +10,13 @@
 #define __test__HelloWorldLayer__
 
 #include "cocos2d.h" 
-#include <iostream>
 
 class HelloWorldLayer : public cocos2d::CCLayer
 {
 public:
+    HelloWorldLayer(void);
+    ~HelloWorldLayer(void);
+    
     virtual bool init();
     static cocos2d::CCScene* scene();
     void startNewScene();

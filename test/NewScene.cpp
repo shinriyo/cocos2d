@@ -11,6 +11,16 @@
 
 using namespace cocos2d;
 
+USING_NS_CC;
+
+NewScene::NewScene(void)
+{
+}
+
+NewScene::~NewScene(void)
+{
+}
+
 CCScene* NewScene::scene()
 {
     CCScene *scene = CCScene::create();
@@ -22,11 +32,15 @@ CCScene* NewScene::scene()
 
 bool NewScene::init()
 {
+    //////////////////////////////
     // 1. super init first
     if ( !CCLayer::init() )
     {
         return false;
     }
+    
+    /////////////////////////////
+    // 2.
     // ==== レイヤーA ====
     // レイヤーAを生成します
     CCLayer* layerA = CCLayer::create();
@@ -58,8 +72,8 @@ bool NewScene::init()
     CCMenu* menu = CCMenu::create(item, NULL);
     // メニューをレイヤーBに追加します
     layerB->addChild(menu);
-    
-    return this;
+
+    return true;
 }
 
 void NewScene::startHelloWorldLayer()
