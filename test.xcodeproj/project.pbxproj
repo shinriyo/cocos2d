@@ -210,6 +210,8 @@
 		BDEAD5AC16EC5594006FCCA6 /* NewScene.h in Sources */ = {isa = PBXBuildFile; fileRef = BDEAD5AA16EC5328006FCCA6 /* NewScene.h */; };
 		BDEAD5AF16EC566F006FCCA6 /* HelloWorldLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDEAD5AD16EC566F006FCCA6 /* HelloWorldLayer.cpp */; };
 		BDEAD5B116EC6DFB006FCCA6 /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEAD5B016EC6DFB006FCCA6 /* sample.png */; };
+		BDEAD5B416EC89FB006FCCA6 /* IntroLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDEAD5B216EC89FA006FCCA6 /* IntroLayer.cpp */; };
+		BDEAD5B616EC9071006FCCA6 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEAD5B516EC9071006FCCA6 /* Default-Landscape~ipad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -656,6 +658,9 @@
 		BDEAD5AD16EC566F006FCCA6 /* HelloWorldLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWorldLayer.cpp; sourceTree = "<group>"; };
 		BDEAD5AE16EC566F006FCCA6 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
 		BDEAD5B016EC6DFB006FCCA6 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sample.png; path = Resources/sample.png; sourceTree = "<group>"; };
+		BDEAD5B216EC89FA006FCCA6 /* IntroLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IntroLayer.cpp; path = ../IntroLayer.cpp; sourceTree = "<group>"; };
+		BDEAD5B316EC89FA006FCCA6 /* IntroLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntroLayer.h; path = ../IntroLayer.h; sourceTree = "<group>"; };
+		BDEAD5B516EC9071006FCCA6 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "Resources/Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -725,6 +730,7 @@
 		BDEAD30116EC4C81006FCCA6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BDEAD5B516EC9071006FCCA6 /* Default-Landscape~ipad.png */,
 				BDEAD5B016EC6DFB006FCCA6 /* sample.png */,
 				BDEAD30216EC4C81006FCCA6 /* CloseNormal.png */,
 				BDEAD30416EC4C81006FCCA6 /* CloseSelected.png */,
@@ -1559,6 +1565,8 @@
 			children = (
 				BDEAD59E16EC4C87006FCCA6 /* AppDelegate.h */,
 				BDEAD59F16EC4C87006FCCA6 /* AppDelegate.cpp */,
+				BDEAD5B316EC89FA006FCCA6 /* IntroLayer.h */,
+				BDEAD5B216EC89FA006FCCA6 /* IntroLayer.cpp */,
 				BDEAD5AE16EC566F006FCCA6 /* HelloWorldLayer.h */,
 				BDEAD5AD16EC566F006FCCA6 /* HelloWorldLayer.cpp */,
 				BDEAD5AA16EC5328006FCCA6 /* NewScene.h */,
@@ -1630,6 +1638,7 @@
 				BDEAD31716EC4C81006FCCA6 /* iTunesArtwork in Resources */,
 				BDEAD3A916EC4C83006FCCA6 /* ChangeLog in Resources */,
 				BDEAD5B116EC6DFB006FCCA6 /* sample.png in Resources */,
+				BDEAD5B616EC9071006FCCA6 /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1821,6 +1830,7 @@
 				BDEAD5A016EC4C87006FCCA6 /* AppDelegate.cpp in Sources */,
 				BDEAD5AB16EC5328006FCCA6 /* NewScene.cpp in Sources */,
 				BDEAD5AF16EC566F006FCCA6 /* HelloWorldLayer.cpp in Sources */,
+				BDEAD5B416EC89FB006FCCA6 /* IntroLayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
