@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		BD0B624216ED58F50021762E /* HelloWorld.fnt in Resources */ = {isa = PBXBuildFile; fileRef = BD0B624016ED58F50021762E /* HelloWorld.fnt */; };
 		BD0B624316ED58F50021762E /* HelloWorld.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0B624116ED58F50021762E /* HelloWorld.png */; };
+		BD0B624716ED5A110021762E /* DisabledButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0B624416ED5A110021762E /* DisabledButtonImage.png */; };
+		BD0B624816ED5A110021762E /* NormalButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0B624516ED5A110021762E /* NormalButtonImage.png */; };
+		BD0B624916ED5A110021762E /* SelectedButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0B624616ED5A110021762E /* SelectedButtonImage.png */; };
 		BDEAD2F116EC4C81006FCCA6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEAD2F016EC4C81006FCCA6 /* QuartzCore.framework */; };
 		BDEAD2F316EC4C81006FCCA6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEAD2F216EC4C81006FCCA6 /* OpenGLES.framework */; };
 		BDEAD2F516EC4C81006FCCA6 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEAD2F416EC4C81006FCCA6 /* OpenAL.framework */; };
@@ -219,6 +222,9 @@
 /* Begin PBXFileReference section */
 		BD0B624016ED58F50021762E /* HelloWorld.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HelloWorld.fnt; sourceTree = "<group>"; };
 		BD0B624116ED58F50021762E /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
+		BD0B624416ED5A110021762E /* DisabledButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DisabledButtonImage.png; sourceTree = "<group>"; };
+		BD0B624516ED5A110021762E /* NormalButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NormalButtonImage.png; sourceTree = "<group>"; };
+		BD0B624616ED5A110021762E /* SelectedButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectedButtonImage.png; sourceTree = "<group>"; };
 		BDEAD2ED16EC4C81006FCCA6 /* test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEAD2F016EC4C81006FCCA6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BDEAD2F216EC4C81006FCCA6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -722,6 +728,9 @@
 		BDEAD30016EC4C81006FCCA6 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				BD0B624416ED5A110021762E /* DisabledButtonImage.png */,
+				BD0B624516ED5A110021762E /* NormalButtonImage.png */,
+				BD0B624616ED5A110021762E /* SelectedButtonImage.png */,
 				BD0B624016ED58F50021762E /* HelloWorld.fnt */,
 				BD0B624116ED58F50021762E /* HelloWorld.png */,
 				BDEAD30116EC4C81006FCCA6 /* Resources */,
@@ -1647,6 +1656,9 @@
 				BDEAD5B616EC9071006FCCA6 /* Default-Landscape~ipad.png in Resources */,
 				BD0B624216ED58F50021762E /* HelloWorld.fnt in Resources */,
 				BD0B624316ED58F50021762E /* HelloWorld.png in Resources */,
+				BD0B624716ED5A110021762E /* DisabledButtonImage.png in Resources */,
+				BD0B624816ED5A110021762E /* NormalButtonImage.png in Resources */,
+				BD0B624916ED5A110021762E /* SelectedButtonImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
