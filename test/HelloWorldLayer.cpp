@@ -52,8 +52,10 @@ bool HelloWorldLayer::init()
     // sample.pngを表示します
     CCSprite* sampleSprite = CCSprite::create("sample.png");
     this->addChild(sampleSprite);
-    CCLabelTTF *label = CCLabelTTF::create(CCString::createWithFormat("W:%.2f, H:%.2f", size.width, size.height)->getCString(), "Marker Feit", 40);
-    // position the label ont the center of the scene
+    //CCLabelTTF *label = CCLabelTTF::create(CCString::createWithFormat("W:%.2f, H:%.2f", size.width, size.height)->getCString(), "Marker Feit", 40);
+    CCLabelBMFont *label = CCLabelBMFont::create("Hello World", "HelloWorld.fnt");
+    
+    // ラベルの座標を画面中央に設定します 
     label->setPosition(ccp(size.width / 2, size.height / 2));
     this->addChild(label);
     
