@@ -46,8 +46,12 @@ bool HelloWorldLayer::init()
     }
     
     /////////////////////////////
-    // 2. 
+    // 2. 画面サイズを取得します
     CCSize size = CCDirector::sharedDirector()->getWinSize();
+    
+    // sample.pngを表示します
+    CCSprite* sampleSprite = CCSprite::create("sample.png");
+    this->addChild(sampleSprite);
     CCLabelTTF *label = CCLabelTTF::create(CCString::createWithFormat("W:%.2f, H:%.2f", size.width, size.height)->getCString(), "Marker Feit", 40);
     // position the label ont the center of the scene
     label->setPosition(ccp(size.width / 2, size.height / 2));
