@@ -78,6 +78,7 @@ bool NewScene::init()
 
 void NewScene::startHelloWorldLayer()
 {
-    CCTransitionCrossFade *tran = CCTransitionCrossFade::create(1.0f, HelloWorldLayer::scene()/*, ccc3(255, 255, 255)*/);
+    // CCTransitionCrossFade does not support color
+    CCTransitionFade *tran = CCTransitionFade::create(1.0f, HelloWorldLayer::scene(), ccWHITE);
     CCDirector::sharedDirector()->replaceScene(tran);
 }

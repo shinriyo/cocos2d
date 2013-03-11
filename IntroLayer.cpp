@@ -58,5 +58,14 @@ void IntroLayer::onEnter()
 
 void IntroLayer::makeTransition(CCTime dt)
 {
+    //CCTransitionProgressHorizontal *tran = CCTransitionProgressHorizontal::create(2, HelloWorldLayer::scene());
+	//CCTransitionProgressInOut *tran = CCTransitionProgressInOut::create(2, HelloWorldLayer::scene());
+	//CCTransitionProgressOutIn *tran = CCTransitionProgressOutIn::create(2, HelloWorldLayer::scene());
+	//CCTransitionProgressRadialCCW *tran = CCTransitionProgressRadialCCW::create(2, HelloWorldLayer::scene());
+	//CCTransitionProgressRadialCW *tran = CCTransitionProgressRadialCW::create(2, HelloWorldLayer::scene());
+	//CCTransitionProgressVertical *tran = CCTransitionProgressVertical::create(2, HelloWorldLayer::scene());
+	//CCTransitionRotoZoom *tran = CCTransitionRotoZoom::create(2, HelloWorldLayer::scene());
+    
+    //CCDirector::sharedDirector()->replaceScene(tran);
     CCDirector::sharedDirector()->replaceScene(CCTransitionProgressRadialCW::create(1.0f, HelloWorldLayer::scene()));
 }
