@@ -21,7 +21,8 @@ public:
     static cocos2d::CCScene* scene();
     virtual bool init();
     void startHelloWorldLayer();
-                         
+    void startCCLOG();
+    
     CREATE_FUNC(NewScene);
 };
 

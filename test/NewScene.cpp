@@ -67,9 +67,14 @@ bool NewScene::init()
     // 前の画面に戻るメニューを作ります
     CCMenuItemFont::setFontName("Helvetica-BoldOblique");
     CCMenuItemFont::setFontSize(40);
-    CCMenuItemFont* item = CCMenuItemFont::create("戻る", this, menu_selector(NewScene::startHelloWorldLayer));
+    CCMenuItemFont *item = CCMenuItemFont::create("戻る", this, menu_selector(NewScene::startHelloWorldLayer));
+    // イメージメニューを作ります
+    CCMenuItemImage *item2 = CCMenuItemImage::create("NormalButtonImage.png", "SelectedButtonImage.png", "DisabledButtonImage.png", this, menu_selector(NewScene::startCCLOG));
+    CCMenu *menu = CCMenu::create(item, item2, NULL);
     
-    CCMenu *menu = CCMenu::create(item, NULL);
+    // メニューが重なって表示されないように調整します
+    menu->alignItemsVerticallyWithPadding(10.0f);
+    
     // メニューをレイヤーBに追加します
     layerB->addChild(menu);
     
@@ -81,4 +86,9 @@ void NewScene::startHelloWorldLayer()
     // CCTransitionCrossFade does not support color
     CCTransitionFade *tran = CCTransitionFade::create(1.0f, HelloWorldLayer::scene(), ccWHITE);
     CCDirector::sharedDirector()->replaceScene(tran);
+}
+
+void NewScene::startCCLOG()
+{
+    CCLOG("CCMenuItemImage selected.");
 }
