@@ -20,8 +20,9 @@ public:
     
     static cocos2d::CCScene* scene();
     virtual bool init();
-    void startHelloWorldLayer();
-    void startCCLOG();
+    void doHelloWorldLayer(CCObject * p_Sender);
+    void doItemImageCCLOG(CCObject * p_Sender);
+    void doItemToggleCCLOG(CCObject * p_Sender);
     
     CREATE_FUNC(NewScene);
 };
